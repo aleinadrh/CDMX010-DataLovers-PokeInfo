@@ -1,0 +1,125 @@
+body{
+  background:linear-gradient(111.6deg, #FFFFFF 2.76%, #B5FEA7 90.52%);
+}
+
+#myModal{
+   background:  linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+   
+}
+.Grass,.Poison,.Fire,.Flying, .Water,.Bug,.Normal,.Electric,.Ground,.Fighting,.Psychic,.Rock,.Ice,.Ghost,.Dragon {
+   font-weight: bold;
+   padding: 1%;
+   margin:1%;
+}
+
+.Grass{
+  color:  #225802 ;
+}
+.Poison{
+  color:  #5f4f6c; 
+}
+.Fire{
+  color:  #760013 ;    
+}
+.Flying{    
+   color:  #0d257c  ;    
+}
+.Water{
+   color:  #029da1 ;     
+}
+.Bug{
+   color:  #5c8a03 ;     
+}
+.Normal{
+   color:  #3a2d2d;
+}
+.Electric{
+   color:  #c99f13;
+}
+.Ground{
+   color: #6a2b00;
+}
+.Fighting{
+   color:  #181317;
+}
+.Psychic{
+   color:  #291a2d;
+}
+.Rock{
+   color:  #625449;
+}
+.Ice{
+   color:  #6fa6c4 ;
+}
+.Ghost{
+   color:  #705e6c ;
+}
+.Dragon{
+   color:  #95242a;
+}
+.undefined{
+   display: none !important;
+}
+
+#modalImg{
+   padding: 5%
+}
+
+.jumbotron{
+  background-image:url(http://images-ahn.mdstrm.com/2018/11/14/241232_1_5bec8f2e39ae2.jpg?d=800x400);
+  background-position:center; 
+  background-size: cover;
+  border-radius: 15px;
+  margin-top: 1%;
+  opacity: 0.9; 
+}
+
+.title-categories{
+   padding: 2%;
+   border-radius: 15px;
+   background: #1D8696;
+}
+
+.card{
+   border: solid 2px #1D8696;
+   color: #1D8696;
+   margin: 1%;
+}
+
+.navbar{
+   background:  linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+}
+
+.categories{
+   background: linear-gradient(90deg, #A8DD9C 0%, #24CCAA 100%);
+   border-radius: 100px;
+   color: teal;
+   font-weight: bold;
+   -webkit-text-stroke: 0.5px #1D8696;
+}
+
+.percentage{
+   color: teal;
+}
+
+#root{
+   margin-left:2%;
+   
+}
+.select-type{
+   width:70%;
+   margin-left:15%;
+   background:  linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+
+}
+#statistics{
+   margin-right: 2%;
+}
+.form-inline{
+   width: 35%;
+}
+#myChart, #myChart1{
+  width: 80% !important;
+  height: 50%;
+  margin: auto 10%;
+}

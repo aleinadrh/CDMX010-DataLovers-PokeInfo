@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="http://allfont.es/allfont.css?fonts=bauhaus-light" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+
+  <title>PokéInfo!</title>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+      <a href="https://pokemongolive.com/es_mx/">
+       <img class="logo" src="https://www.logolynx.com/images/logolynx/2b/2b5580b34909f75e7c9ac7b92ac0c4bf.png" height="40" width="40"  alt="Poké">
+      </a>
+      <form class="form-inline">
+        <button class="btn btn-outline-success my-2 my-sm-0 text-white" id="statistics" type="button">Estadística</button>
+        <input class="form-control mr-sm-2" type="text" placeholder="Encuentra tu Pokémon" id="search-imput">
+        <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="button" id="searching">Buscar</button>
+      </form>
+        
+    </nav>
+
+
+  <section class="jumbotron">
+    <h1 class="title-photo display-2 text-primary text-left font-weight-bold">
+        <img src=https://fontmeme.com/permalink/210204/44167ff8bd0cbaf34300789fb2fdecdc.png class="img-fluid" alt=""></h1>
+    <p class="lead  text-left font-weight-bold">Toda la información que necesitas para lograr ser un maestro Pokémon</p>
+    <hr class="my-2">
+    <p class=" text-left font-weight-bold ">Encuentra la información básica de los 251 pokémones de la región Kanto y Johto</p>
+  </section>
+</header>
+
+
+<section>
+    <div class="row select-type  shadow p-4 mb-4 bg-white">
+    <div class="col">
+    <select class="custom-select custom-select" id="filtered-type">
+        <option selected>Elige la Categoría de Pokémon a Filtrar</option>
+        <option value="grass">Planta</option>
+        <option value="poison">Veneno</option>
+        <option value="fire">Fuego</option>
+        <option value="flying">Volador</option>
+        <option value="water">Agua</option>
+        <option value="ground">Tierra</option>
+        <option value="normal">Normal</option>
+        <option value="electric">Eléctrico</option>
+        <option value="bug">Insecto</option>
+        <option value="psychic">Psiquico</option>
+        <option value="dragon">Dragón</option>
+        <option value="fighting">Lucha</option>
+        <option value="ice">Hielo</option>
+        <option value="rock">Roca</option>
+        <option value="ghost">Fantasma</option>
+        
+      </select>
+      </div>
+      <div class="col">
+      <select class="custom-select custom-select" id="order-pokemon">
+        <option selected>Elige la forma de ordenar tus Pokémones</option>
+        <option value="az">Ordenar de A-Z</option>
+        <option value="za">Ordenar de Z-A</option>
+      </select>
+      </div>
+    </div>
+
+    
+    <div class="row" id="root"></div>
+    <div id="modal"></div>
+    <canvas id="myChart"></canvas>
+    <canvas id="myChart1"></canvas>
+  
+  
+</section>
+
+<footer class="navbar text-white w-100">
+  <div class="container"> 
+    <p>
+    <a href="https://www.laboratoria.la/">
+      <img src="https://yt3.ggpht.com/a-/AAuE7mBcLlvMZuoj9MA707Ec5yg9tIyr2Y1Am-BTxw=s900-mo-c-c0xffffffff-rj-k-no" height="50" width="50">
+    </a>
+    <a href="https://fontmeme.com/es/fuente-de-pokemon-go/"><img src="https://fontmeme.com/permalink/210204/f10cd47b609dcb25b7f81ee63dc51b62.png" alt="fuente-de-pokemon-go" border="0">
+    </a>
+    </p>
+    </div>
+</footer>
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script src="main.js"></script>    
+      <script src="data.js"></script>
+      <script src="pokemon.js"></script> 
+     
+</body>
+
+</html>
